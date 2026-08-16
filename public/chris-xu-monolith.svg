@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960" height="720" viewBox="0 0 960 720" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">CX — Glass Monolith</title>
+  <desc id="desc">An animated, luminous violet crystal monogram floating inside a delicate orbital halo. Original personal-brand illustration for Christopher Xu.</desc>
+  <defs>
+    <radialGradient id="aura" cx="0" cy="0" r="1" gradientTransform="translate(480 350) rotate(90) scale(315 360)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A68EFF" stop-opacity=".25"/><stop offset=".48" stop-color="#755CDB" stop-opacity=".13"/><stop offset="1" stop-color="#7453C4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="front" x1="365" y1="192" x2="570" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D8D4FF" stop-opacity=".48"/><stop offset=".23" stop-color="#8B84E9" stop-opacity=".17"/><stop offset=".66" stop-color="#5C4C9B" stop-opacity=".19"/><stop offset="1" stop-color="#BA9AFF" stop-opacity=".35"/>
+    </linearGradient>
+    <linearGradient id="top" x1="333" y1="180" x2="599" y2="240" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D7EBFF" stop-opacity=".74"/><stop offset=".48" stop-color="#928AFF" stop-opacity=".30"/><stop offset="1" stop-color="#FFB8EE" stop-opacity=".42"/>
+    </linearGradient>
+    <linearGradient id="side" x1="547" y1="216" x2="632" y2="509" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6C6F6" stop-opacity=".44"/><stop offset=".47" stop-color="#685DC9" stop-opacity=".18"/><stop offset="1" stop-color="#9C88FF" stop-opacity=".55"/>
+    </linearGradient>
+    <linearGradient id="edgeL" x1="333" y1="190" x2="355" y2="490" gradientUnits="userSpaceOnUse"><stop stop-color="#E3F4FF"/><stop offset=".55" stop-color="#AC9BFF"/><stop offset="1" stop-color="#6ABFFF"/></linearGradient>
+    <linearGradient id="edgeR" x1="600" y1="190" x2="596" y2="500" gradientUnits="userSpaceOnUse"><stop stop-color="#F5C3FF"/><stop offset=".45" stop-color="#9B88FF"/><stop offset="1" stop-color="#BFA7FF"/></linearGradient>
+    <linearGradient id="orbital" x1="155" y1="245" x2="800" y2="485" gradientUnits="userSpaceOnUse"><stop stop-color="#9A8FFF" stop-opacity="0"/><stop offset=".28" stop-color="#9A8FFF" stop-opacity=".5"/><stop offset=".62" stop-color="#CFB7FF" stop-opacity=".85"/><stop offset="1" stop-color="#8CEBCC" stop-opacity=".08"/></linearGradient>
+    <linearGradient id="floorRing" x1="320" y1="570" x2="648" y2="626" gradientUnits="userSpaceOnUse"><stop stop-color="#8080FF" stop-opacity="0"/><stop offset=".5" stop-color="#B4A8FF" stop-opacity=".6"/><stop offset="1" stop-color="#78F5D5" stop-opacity="0"/></linearGradient>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientTransform="translate(467 352) rotate(90) scale(188 158)" gradientUnits="userSpaceOnUse"><stop stop-color="#D0B8FF" stop-opacity=".24"/><stop offset="1" stop-color="#7F6BC7" stop-opacity="0"/></radialGradient>
+    <filter id="blur60" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="48"/></filter>
+    <filter id="softglow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="9"/></filter>
+    <filter id="pointglow" x="-300%" y="-300%" width="700%" height="700%"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="shadow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="18"/></filter>
+    <clipPath id="frontClip"><path d="M338 205 541 207 542 500 338 480Z"/></clipPath>
+    <path id="orbitPath" d="M163 383C163 305 304 259 478 259S798 305 798 383 655 506 478 506 163 461 163 383Z"/>
+  </defs>
+  <style><![CDATA[
+    #monolith { transform-box: fill-box; transform-origin: center; animation: float 7s cubic-bezier(.44,0,.56,1) infinite; }
+    #halo { transform-origin: 480px 355px; animation: haloBreath 8s ease-in-out infinite; }
+    #rays { animation: raysBreath 6s ease-in-out infinite; }
+    #symbol, #symbolGlow { animation: glyphBreath 5.5s ease-in-out infinite; }
+    #ground { animation: groundBreath 7s ease-in-out infinite; }
+    #glint { animation: glint 9s ease-in-out infinite; }
+    #orbitLine { animation: orbitBreathe 6s ease-in-out infinite; }
+    .spark { animation: sparkle 3.5s ease-in-out infinite alternate; }
+    .spark:nth-of-type(2) { animation-delay: -1.7s; }
+    @keyframes float {0%,100%{transform:translateY(0) rotate(-1deg)} 50%{transform:translateY(-19px) rotate(1.2deg)}}
+    @keyframes haloBreath {0%,100%{opacity:.72;transform:scale(.97)} 50%{opacity:1;transform:scale(1.035)}}
+    @keyframes raysBreath {0%,100%{opacity:.7} 50%{opacity:1}}
+    @keyframes glyphBreath {0%,100%{opacity:.93} 50%{opacity:1}}
+    @keyframes groundBreath {0%,100%{opacity:.5;transform:scale(.96)}50%{opacity:.85;transform:scale(1.035)}}
+    @keyframes glint {0%,19%,83%,100%{opacity:0;transform:translateX(-130px)} 36%,51%{opacity:.55;transform:translateX(200px)} 65%{opacity:0;transform:translateX(310px)}}
+    @keyframes orbitBreathe {0%,100%{opacity:.42}50%{opacity:.7}}
+    @keyframes sparkle {0%{opacity:.2}100%{opacity:.95}}
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after {animation:none!important} animateMotion {display:none} }
+  ]]></style>
+  <!-- Ambient light; transparent SVG background -->
+  <ellipse id="halo" cx="480" cy="365" rx="338" ry="310" fill="url(#aura)"/>
+  <ellipse cx="478" cy="338" rx="228" ry="195" fill="#7557F2" opacity=".085" filter="url(#blur60)"/>
+  <!-- Orbit behind crystal -->
+  <path d="M163 383C163 305 304 259 478 259S798 305 798 383" stroke="url(#orbital)" stroke-width="1.4" stroke-dasharray="3 11" stroke-linecap="round" opacity=".65"/>
+  <path d="M180 345C265 251 682 240 773 343" stroke="#BFA9FF" stroke-opacity=".16" stroke-width="1"/>
+  <!-- Subtle platform halo -->
+  <g id="ground" style="transform-origin:480px 587px">
+    <ellipse cx="479" cy="578" rx="183" ry="27" fill="#8C69FF" opacity=".16" filter="url(#shadow)"/>
+    <ellipse cx="479" cy="583" rx="181" ry="27" stroke="url(#floorRing)" stroke-width="1.4" opacity=".72"/>
+    <ellipse cx="479" cy="583" rx="125" ry="12" fill="#B4A8FF" opacity=".09" filter="url(#softglow)"/>
+  </g>
+  <!-- Crystal -->
+  <g id="monolith">
+    <path d="M338 205 386 171 601 179 541 207Z" fill="url(#top)" stroke="#E0D9FF" stroke-opacity=".57" stroke-width="1.8"/>
+    <path d="M541 207 601 179 600 459 542 500Z" fill="url(#side)" stroke="url(#edgeR)" stroke-width="2"/>
+    <path d="M338 205 541 207 542 500 338 480Z" fill="url(#front)" stroke="url(#edgeL)" stroke-width="2.6"/>
+    <path d="M349 213 531 216 532 487 348 470Z" stroke="#EEF0FF" stroke-opacity=".18" stroke-width="1"/>
+    <path d="M338 480 542 500 600 459" stroke="#A7B9FF" stroke-opacity=".66" stroke-width="1.6"/>
+    <path d="M386 171 389 449 338 480" stroke="#B8CCFF" stroke-opacity=".11" stroke-width="1"/>
+    <path d="M541 207 600 459" stroke="#F4D4FF" stroke-opacity=".3" stroke-width="1"/>
+    <path d="M338 205 541 207" stroke="#E8F4FF" stroke-opacity=".94" stroke-width="3"/>
+    <path d="M338 205 338 480" stroke="url(#edgeL)" stroke-width="3"/>
+    <path d="M542 500 600 459" stroke="#BFACFF" stroke-opacity=".7" stroke-width="3"/>
+    <ellipse cx="467" cy="353" rx="150" ry="165" fill="url(#core)" clip-path="url(#frontClip)"/>
+    <g clip-path="url(#frontClip)">
+      <path id="glint" d="M304 171 350 171 534 530 485 530Z" fill="white" opacity=".3" filter="url(#softglow)"/>
+      <path d="M350 217 351 470" stroke="#DCE9FF" stroke-opacity=".12" stroke-width="4"/>
+    </g>
+    <!-- Monogram, designed for legibility at small sizes -->
+    <g id="symbolGlow" filter="url(#softglow)" opacity=".34">
+      <path d="M457 319C445 307 428 302 412 307 390 312 379 332 379 353 379 374 391 395 413 400 430 403 445 398 457 385" stroke="#D9CFFF" stroke-width="14" stroke-linecap="round"/>
+      <path d="M479 316 538 395M537 315 479 393" stroke="#D9CFFF" stroke-width="14" stroke-linecap="round"/>
+    </g>
+    <g id="symbol" stroke="#F4F0FF" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M453 322C443 313 429 310 415 314 396 319 387 336 387 353 387 371 398 388 415 393 429 397 444 391 454 381"/>
+      <path d="M484 322 532 385M532 321 484 387"/>
+    </g>
+    <path d="M385 175 418 179" stroke="#FFF" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
+    <path d="M593 186 593 214" stroke="#FFE6FF" stroke-opacity=".38" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <!-- Orbit in front; one continuous looping orbit path -->
+  <path id="orbitLine" d="M798 383C798 462 655 506 478 506S163 461 163 383" stroke="url(#orbital)" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M163 383C163 305 304 259 478 259S798 305 798 383 655 506 478 506 163 461 163 383Z" stroke="#C8B6FF" stroke-opacity=".1" stroke-width="17" filter="url(#softglow)"/>
+  <g>
+    <circle r="13" fill="#BDA8FF" opacity=".55" filter="url(#pointglow)"/>
+    <circle r="4.5" fill="#E9DDFF"/>
+    <animateMotion dur="11s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#orbitPath"/></animateMotion>
+  </g>
+  <g>
+    <circle r="12" fill="#82ECCD" opacity=".35" filter="url(#pointglow)"/>
+    <circle r="3.4" fill="#A4F4C5"/>
+    <animateMotion dur="11s" begin="-5.5s" repeatCount="indefinite"><mpath xlink:href="#orbitPath"/></animateMotion>
+  </g>
+  <g id="rays">
+    <circle class="spark" cx="226" cy="292" r="2.2" fill="#C0AEFF"/>
+    <circle class="spark" cx="716" cy="274" r="1.8" fill="#A5F4D2"/>
+    <circle class="spark" cx="754" cy="488" r="1.3" fill="#E4D8FF"/>
+    <circle class="spark" cx="260" cy="488" r="1.5" fill="#C1AEFF"/>
+  </g>
+</svg>
